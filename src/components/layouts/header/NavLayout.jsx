@@ -36,8 +36,8 @@ export default function NavLayout(currentPage, handlePageChange) {
 
         <ul className='navBarList'>
             {navItems.map((item) => (
-                <li className='navButtons'>
-                    <Link to={item.link} onClick={()=> handlePageChange()}>
+                <li className={currentPage === item.title ? 'navButtonsActive' : 'navButtons'}>
+                    <Link to={item.link} onClick={()=> handlePageChange(item.title)}>
                        {item.title}
                     </Link>
                 </li>
