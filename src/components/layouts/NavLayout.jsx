@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import './NavLayout.css';
+
 
 export default function NavLayout(props) {
   
@@ -35,7 +37,7 @@ export default function NavLayout(props) {
             justifyContent: 'right'
         }}>
             {navItems.map((item) => (
-                <li style={{ margin: "0px 5px 0px 5px"}}>
+                <li className='navButtons'>
                     <Link to={item.link}>
                        {item.title}
                     </Link></li>
