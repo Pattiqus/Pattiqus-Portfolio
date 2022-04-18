@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import './NavLayout.css';
 
 
-export default function NavLayout(currentPage, handlePageChange) {
+export default function NavLayout({currentPage, handlePageChange}) {
   
     const navItems = [
         {
