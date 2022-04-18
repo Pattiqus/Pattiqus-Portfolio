@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import './NavLayout.css';
 
 
-export default function NavLayout(props) {
+export default function NavLayout(currentPage, handlePageChange) {
   
     const navItems = [
         {
             title: 'Home',
-            link: '/'
+            link: '/home'
         },
         {
             title: 'About',
@@ -22,6 +22,10 @@ export default function NavLayout(props) {
             title: 'Contact',
             link: '/contact'
         },
+        {
+            title: 'Resume',
+            link: '../../../../assets/Resume/Resume - Patrick Brown.pdf'
+        },
     ];
   
     return (
@@ -33,13 +37,14 @@ export default function NavLayout(props) {
         <ul className='navBarList'>
             {navItems.map((item) => (
                 <li className='navButtons'>
-                    <Link to={item.link}>
+                    <Link to={item.link} onClick={()=> handlePageChange()}>
                        {item.title}
-                    </Link></li>
+                    </Link>
+                </li>
             ))}
         </ul>
 
-        {props.children}
+        {/* {props.children} */}
 
     </div>
   )
