@@ -30,12 +30,7 @@ export default function NavLayout(props) {
 
         {/* nav bar */} 
 
-        <ul style={{
-            listStyle: 'none',
-            padding: 0,
-            display: 'flex',
-            justifyContent: 'right'
-        }}>
+        <ul className='navBarList'>
             {navItems.map((item) => (
                 <li className='navButtons'>
                     <Link to={item.link}>

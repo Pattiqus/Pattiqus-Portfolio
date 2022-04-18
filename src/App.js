@@ -1,6 +1,6 @@
 import './App.css';
-import NavLayout from './components/layouts/NavLayout';
-
+import NavLayout from './components/layouts/header/NavLayout.jsx';
+import aboutMe from './components/layouts/about/aboutMe';
 
 function App() {
   return (
@@ -10,7 +10,11 @@ function App() {
 
           </NavLayout>
       </header>
-
+      <body>
+        <aboutMe>
+          
+        </aboutMe>
+      </body>
 
 
     </div>

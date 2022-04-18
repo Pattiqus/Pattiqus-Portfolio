@@ -1,0 +1,17 @@
+.navButtons {
+    margin: 5px 10px 5px 10px;
+    font-size: 25px;
+    background-color: blue;
+    border: 3px;
+    border: solid;
+    border-radius: 10px;
+    padding: 4px;
+
+}
+
+.navBarList {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    margin: 0;
+}
