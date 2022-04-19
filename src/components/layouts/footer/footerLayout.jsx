@@ -1,12 +1,16 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from "react-router-dom";
+import { Icon } from '@fortawesome/fontawesome-svg-core'; 
+import { faIcons } from '@fortawesome/free-solid-svg-icons';
+
+
 
 export default function footerLayout(props) {
   
     const socialLinks = [
         {
-            title: <FontAwesomeIcon icon="fa-brands fa-github" />,
+            title: <FontAwesomeIcon Icon="fa-brands fa-github" />,
             link: 'https://github.com/Pattiqus'
         },
         {
@@ -27,7 +31,7 @@ export default function footerLayout(props) {
     <div>
 
         {/*Footer*/}
-
+        
         <ul>
         {socialLinks.map((item) => (
                 <li className=''>
@@ -39,7 +43,7 @@ export default function footerLayout(props) {
         </ul>
 
         {props.children}
-        
+
     </div>
   )
 }

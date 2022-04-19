@@ -1,6 +1,6 @@
 import './App.css';
 import PortfolioContainer from './components/containers/PortfolioContainer';
-import footerLayout from './components/layouts/footer/footerLayout';
+import FooterLayout from './components/layouts/footer/footerLayout';
 
 function App() {
   return (
@@ -14,9 +14,7 @@ function App() {
         </PortfolioContainer>
       </body>
       <footer>
-        <footerLayout>
-          
-        </footerLayout>
+        <FooterLayout/>
       </footer>
 
     </div>
