@@ -1,5 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from "react-router-dom";
 
 export default function footerLayout(props) {
   
@@ -24,9 +25,21 @@ export default function footerLayout(props) {
   
     return (
     <div>
+
+        {/*Footer*/}
+
         <ul>
-            <li></li>
+        {socialLinks.map((item) => (
+                <li className=''>
+                    <Link to={item.link}>
+                       {item.title}
+                    </Link>
+                </li>
+            ))} 
         </ul>
+
+        {props.children}
+        
     </div>
   )
 }
