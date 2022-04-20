@@ -1,0 +1,12 @@
+.footerLinksList {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.footerButtons {
+    margin: 5px 10px 5px 10px;
+}
