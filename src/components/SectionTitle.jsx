@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled'
+import styled from 'styled-components'
 
 const SectionTitleStyle = styled.div`
   text-align: center;
@@ -11,6 +11,7 @@ const SectionTitleStyle = styled.div`
     font-family: 'Montserrat Bold';
     font-size: 6rem;
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     text-transform: uppercase;
   }
   @media only screen and (max-width: 768px) {
@@ -30,8 +31,8 @@ export default function SectionTitle({
 }) {
   return (
     <SectionTitleStyle className="section-title">
-      <p>{subheading}</p>
       <h2>{heading}</h2>
+      <p>{subheading}</p>
     </SectionTitleStyle>
   );
 }
