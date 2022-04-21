@@ -11,6 +11,17 @@ const ItemStyle = styled.div`
     gap: 2rem;
     border-radius: 8px;
     margin-bottom: 2rem;
+        .icon {
+            color: var(--white);
+            background-color: var(--gray-2);
+            padding: 1.3rem;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+        svg {
+            width: 3.5rem;
+        }
 `;
 
 export default function ContactInfo({
@@ -19,11 +30,11 @@ export default function ContactInfo({
 }) {
 
   return (
-    <div>
-        <div className='icon'></div>
+    <ItemStyle>
+        <div className='icon'>{icon}</div>
         <div className='info'>
             <PText>{text}</PText>
         </div>
-    </div>
+    </ItemStyle>
   )
 }

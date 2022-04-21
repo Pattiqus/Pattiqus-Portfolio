@@ -1,4 +1,3 @@
-import './App.css';
 import PortfolioContainer from './containers/PortfolioContainer';
 import FooterLayout from './layouts/footer/footerLayout'
 
