@@ -119,7 +119,8 @@ export default function NavLayout() {
 
     <div>
         <NavBarStyle>
-        <div className='mobile-menu-icon'
+        <div 
+            className='mobile-menu-icon'
             onClick={() => SetShowNav(!showNav)}
             role='button'
             onKeyDown={() => SetShowNav(!showNav)}
