@@ -4,17 +4,14 @@ import App from './App';
 import GlobalStyles from './style/GlobalStyle';
 import Typography from './style/Typography';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from "react-router-dom"; 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
   <React.StrictMode>
     <GlobalStyles/>
     <Typography/>
     <App />
   </React.StrictMode>
-  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

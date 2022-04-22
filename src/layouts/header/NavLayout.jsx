@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import './NavLayout.css';
 
 
-export default function NavLayout({currentPage, handlePageChange}) {
+export default function NavLayout() {
   
     const navItems = [
         {
@@ -24,10 +24,12 @@ export default function NavLayout({currentPage, handlePageChange}) {
         },
         {
             title: 'Resume',
-            link: '../../../../assets/Resume/Resume - Patrick Brown.pdf'
+            link: 'google.drive can lock in google drive after grade'
         },
     ];
-  
+
+    const location = useLocation();
+
     return (
 
     <div>
@@ -36,8 +38,8 @@ export default function NavLayout({currentPage, handlePageChange}) {
 
         <ul className='navBarList'>
             {navItems.map((item) => (
-                <li className={currentPage === item.title ? 'navButtonsActive' : 'navButtons'}>
-                    <Link to={item.link} onClick={()=> handlePageChange(item.title)}>
+                <li key={item.link} className={location.pathname === item.link ? 'navButtonsActive' : 'navButtons'}>
+                    <Link to={item.link} >
                        {item.title}
                     </Link>
                 </li>
