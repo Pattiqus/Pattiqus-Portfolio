@@ -60,7 +60,7 @@ export default function ContactComponent() {
             <div className='contactSection__wrapper'>
               <div className='left'>
                 <ContactInfo icon={<MdLocalPhone />} text='04** *** ***'/>
-                <ContactInfo icon={<MdEmail />} text='patticus.tv@gmail.com'/>
+                <ContactInfo icon={<MdEmail />} text='pattiqus@gmail.com'/>
                 <ContactInfo icon={<MdPlace />} text='Melbourne, Australia'/>
               </div>
               <div className='right'>
