@@ -2,8 +2,24 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from "react-router-dom";
 import { faGithub, faLinkedin, faStackOverflow, faTwitter } from '@fortawesome/free-brands-svg-icons'
-import './FooterLayout.css';
+import styled from 'styled-components';
 
+const FooterStyles = styled.div`
+    .footerLinksList {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    background: var(--dark-bg);
+}
+
+.footerButtons {
+    margin: 5px 20px 5px 20px;
+    font-size: 4rem;
+}
+`;
 
 export default function footerLayout(props) {
   
@@ -28,9 +44,7 @@ export default function footerLayout(props) {
   
     return (
     <div>
-
-        {/*Footer*/}
-        
+        <FooterStyles>
         <ul className='footerLinksList'>
         {socialLinks.map((item) => (
                 <li className='footerButtons'>
@@ -40,7 +54,7 @@ export default function footerLayout(props) {
                 </li>
             ))} 
         </ul>
-
+        </FooterStyles>
         {props.children}
 
     </div>
