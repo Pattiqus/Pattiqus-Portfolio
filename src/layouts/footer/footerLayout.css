@@ -5,6 +5,7 @@
     bottom: 0;
     width: 100%;
     position: fixed;
+    background: var(--dark-bg);
 }
 
 .footerButtons {
