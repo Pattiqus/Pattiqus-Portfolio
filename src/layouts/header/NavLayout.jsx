@@ -93,7 +93,7 @@ export default function NavLayout() {
     const navItems = [
         {
             title: 'Home',
-            link: '/home'
+            link: '/'
         },
         {
             title: 'About',
