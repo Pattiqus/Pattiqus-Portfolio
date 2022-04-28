@@ -55,9 +55,9 @@ export default function footerLayout(props) {
             <ul className='footerLinksList'>
             {socialLinks.map((item) => (
                     <li className='footerButtons'>
-                        <Link to={item.link}>
+                        <a href={item.link} target='_blank' rel='noreferrer'>
                         {item.title}
-                        </Link>
+                        </a>
                     </li>
                 ))} 
             </ul>
