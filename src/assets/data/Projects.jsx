@@ -15,7 +15,7 @@ const projects = [
     hyperGit: <a href='https://github.com/Pattiqus/PWA-Text-Editor'>
       <FontAwesomeIcon icon={faGithub}/></a>,
     hyperDeployed: <a href='https://guarded-island-69149.herokuapp.com/'>
-      {<IoRocket/>}</a>
+      <div className='icon'>{<IoRocket/>}</div></a>
   },
   {
     id: uuidv4(),
