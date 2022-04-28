@@ -18,30 +18,30 @@ const projects = [
   },
   {
     id: uuidv4(),
-    name: 'Green CTG',
+    name: 'Lorem',
     desc:
-      'An app to help people to get an overview of how they can make the city beautiful.',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     img: placeholderImg,
   },
   {
     id: uuidv4(),
-    name: 'Coin Tracker',
+    name: 'Lorem',
     desc:
-      'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     img: placeholderImg,
   },
   {
     id: uuidv4(),
-    name: "Cavin's Portfolio",
+    name: "Lorem",
     desc:
-      'A portfolio for Cavin jr. A artist from New york city. The portfolio is made using ReactJs and GatsbyJs.',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     img: placeholderImg,
   },
   {
     id: uuidv4(),
-    name: 'Tracking Soft',
+    name: 'Lorem',
     desc:
-      'A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.',
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     img: placeholderImg,
   },
 ];
