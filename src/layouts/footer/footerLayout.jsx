@@ -14,10 +14,16 @@ const FooterStyles = styled.div`
     position: fixed;
     background: var(--dark-bg);
 }
-
 .footerButtons {
     margin: 5px 20px 5px 20px;
     font-size: 4rem;
+}
+.footer__container {
+    display: flex;
+    flex-direction: column;
+}
+.trademark {
+    margin-bottom: 20px;
 }
 `;
 
@@ -45,15 +51,20 @@ export default function footerLayout(props) {
     return (
     <div>
         <FooterStyles>
-        <ul className='footerLinksList'>
-        {socialLinks.map((item) => (
-                <li className='footerButtons'>
-                    <Link to={item.link}>
-                       {item.title}
-                    </Link>
-                </li>
-            ))} 
-        </ul>
+        <div className="footer__container">
+            <ul className='footerLinksList'>
+            {socialLinks.map((item) => (
+                    <li className='footerButtons'>
+                        <Link to={item.link}>
+                        {item.title}
+                        </Link>
+                    </li>
+                ))} 
+            </ul>
+            <div className='trademark'>
+                <p>Pattiqus</p>
+            </div>
+        </div>
         </FooterStyles>
         {props.children}
 

@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import Background from '../assets/images/background.jpg'
 
 const GlobalStyles = createGlobalStyle`
 *{
@@ -7,9 +8,10 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   :root{
-    --dark-bg: #262626;
+    --dark-bg: #000000;
     --gray-1: #BCB4B4;
-    --deep-dark: #1E1E1E;
+    --deep-dark: #262626;
+    --blue-steel: #5b84bc;
     --gray-2: #363636;
     --white : white;
     --black: black;
@@ -18,6 +20,10 @@ const GlobalStyles = createGlobalStyle`
     font-size: 10px;
     font-family: 'Roboto Mono';
     background-color: var(--dark-bg);
+    background-image: url(${Background});
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
   ul,li{
     list-style: none;
@@ -37,21 +43,6 @@ const GlobalStyles = createGlobalStyle`
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
-  }
-/* Smooth Scroll  */
-  [data-scrollbar] {
-    height: 100vh;
-    overflow: hidden;
-    background-color: var(--gray-1);
-    .scroll-content {
-      background-color: var(--dark-bg);
-    }
-    .scrollbar-track.scrollbar-track-y {
-      background: var(--deep-dark);
-      .scrollbar-thumb-y {
-        background: var(--gray-1);
-      }
-    }
   }
 `;
 export default GlobalStyles;
