@@ -29,6 +29,9 @@ const ProjectItemStyles = styled.div`
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
   }
+  .hyperlinks {
+    display: flex;
+  }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
       height: 350px;
@@ -40,6 +43,8 @@ export default function ProjectItem({
   img = placeholderImg,
   title = 'Project Name',
   desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+  hyperGit ='#',
+  hyperDeployed = '#'
 }) {
   return (
     <ProjectItemStyles>
@@ -51,6 +56,11 @@ export default function ProjectItem({
           <h3 className="projectItem__title">{title}</h3>
         </Link>
         <p className="projectItem__desc">{desc}</p>
+      </div>
+      <div className="projectItem__info">
+        <div className="hyperlinks">
+          <h3 className="projectItem__title">{hyperGit}</h3><h3 className="projectItem__title">{hyperDeployed}</h3>
+        </div>
       </div>
     </ProjectItemStyles>
   );

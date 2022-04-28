@@ -29,6 +29,8 @@ export default function Portfolio() {
               title={item.name}
               desc={item.desc}
               img={item.img}
+              hyperGit={item.hyperGit}
+              hyperDeployed={item.hyperDeployed}
               />
               ))}
            </div>

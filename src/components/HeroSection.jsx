@@ -24,8 +24,9 @@ const HeroStyles = styled.div`
         }
         .hero__name {
             font-size: 7rem;
-            font-family: 'Montserrat SemiBold';
+            font-family: 'Tomatoes-O8L8';
             color: var(--gray-1); 
+            margin-bottom: 100px;
         }
     }
     .hero__image {
@@ -46,8 +47,8 @@ export default function HeroSection() {
         <div className="hero">
             <div className="container">
                 <h1 className='hero__heading'>
-                    <span>Hello World</span>
-                    <span className='hero__name'>Pat Brown</span>
+                    <span>Pat Brown</span>
+                    <span className='hero__name'>Pattiqus</span>
                 </h1>
                 <div className="hero__image">
                     <img src={HeroImage} alt='me-chinatown'/>
