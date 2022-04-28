@@ -1,10 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import { MdSearch } from 'react-icons/md';
+import SectionTitle from '../components/SectionTitle';
+import ProjectItem from '../components/ProjectItem';
+import ProjectInfo from '../assets/data/Projects';
+
+
+const PortfolioStyles = styled.div`
+  padding: 10rem 0;
+  .project__allitems {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5rem;
+    margin-top: 5rem;
+  }
+`;
 
 export default function Portfolio() {
+  const [projectData, setProjectData] = useState(ProjectInfo);
+
   return (
-    <div>
-         <h1>Portfolio</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia natus reprehenderit neque laborum, totam modi quasi numquam at asperiores reiciendis dolore fugit eius nulla corrupti rerum libero voluptatem. In, ex!</p>
-    </div>
+    <PortfolioStyles>
+         <div className="container">
+           <SectionTitle heading='Projects' subheading='Some of my recent works'/>
+           <div className="project__allitems">
+              {projectData.map((item) => (
+              <ProjectItem
+              key={item.id}
+              title={item.name}
+              desc={item.desc}
+              img={item.img}
+              />
+              ))}
+           </div>
+         </div>
+    </PortfolioStyles>
   )
 }
