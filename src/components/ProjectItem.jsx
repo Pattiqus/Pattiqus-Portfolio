@@ -23,13 +23,20 @@ const ProjectItemStyles = styled.div`
   }
   .projectItem__title {
     font-size: 2.2rem;
+    justify-content: space-around;
+    .icon {
+      font-size: 2.2rem;
+    }
+    .svg.path {
+      font-size: 2.2rem;
+    }
   }
   .projectItem__desc {
     font-size: 1.6rem;
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
   }
-  .hyperlinks.svg {
+  .hyperlinks {
     display: flex;
   }
   @media only screen and (max-width: 768px) {
@@ -59,7 +66,7 @@ export default function ProjectItem({
       </div>
       <div className="projectItem__info">
         <div className="hyperlinks">
-          <h3 className="projectItem__title">{hyperGit}</h3><h3 className="projectItem__title">{hyperDeployed}</h3>
+          <h3 className="projectItem__title">{hyperGit} GitHub</h3><h3 className="projectItem__title">{hyperDeployed} Deployed</h3>
         </div>
       </div>
     </ProjectItemStyles>
