@@ -29,7 +29,7 @@ const ProjectItemStyles = styled.div`
     font-family: 'RobotoMono Regular';
     margin-top: 1rem;
   }
-  .hyperlinks {
+  .hyperlinks.svg {
     display: flex;
   }
   @media only screen and (max-width: 768px) {

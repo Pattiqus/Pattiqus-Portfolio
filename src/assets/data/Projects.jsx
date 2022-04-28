@@ -2,7 +2,8 @@ import { v4 as uuidv4 } from 'uuid';
 import placeholderImg from '../images/placeholderImg.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { FaRocket } from 'react-icons/fa';
+import { IoRocket } from 'react-icons/io5';
+
 
 const projects = [
   {
@@ -12,9 +13,9 @@ const projects = [
       'Progressive Web Application, for modifying text. Can be saved on the local machine.',
     img: placeholderImg,
     hyperGit: <a href='https://github.com/Pattiqus/PWA-Text-Editor'>
-      <FontAwesomeIcon icon={faGithub}/></a>,
+      <div className='icon'><FontAwesomeIcon icon={faGithub}/></div><p> GitHub</p></a>,
     hyperDeployed: <a href='https://guarded-island-69149.herokuapp.com/'>
-      <FontAwesomeIcon icon={FaRocket}/></a>
+      <div className='icon'>{<IoRocket/>}</div><p> Deployed</p></a>
   },
   {
     id: uuidv4(),
