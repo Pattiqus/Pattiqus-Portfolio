@@ -47,10 +47,16 @@ const [name, setName ] = useState('');
 const [email, setEmail ] = useState('');
 const [message, setMessage ] = useState('');
 
-  return (
-    <div>
+const { register, handleSubmit, formState: { errors },} = useForm();
+
+const onSubmit = (data) => {
+  console.log(data);
+};
+
+return (
+    <>
       <FormStyle>
-        <form>
+        <form onSubmit={handleSubmit(onSubmit)}>
             <div className="form-group">
               <label htmlFor='name'>
                 Your name
@@ -59,8 +65,9 @@ const [message, setMessage ] = useState('');
                   id='name' 
                   name='name' 
                   value={name} 
-                  onChange={(e) => setName(e.target.value)}>
-                </input>
+                  onChange={(e) => setName(e.target.value)}
+                  {...register('name', { required: "Name is required"})}
+                  />
                 <small className='text-warning'>Name is required</small>
               </label>
             </div>
@@ -72,8 +79,9 @@ const [message, setMessage ] = useState('');
                   id='email' 
                   name='email' 
                   value={email} 
-                  onChange={(e) => setEmail(e.target.value)}>
-                </input>
+                  onChange={(e) => setEmail(e.target.value)}
+                  {...register('email', { required: "Email is required"})}
+                  />
                 <small className='text-warning'>Email is required</small>
               </label>
             </div>
@@ -85,7 +93,8 @@ const [message, setMessage ] = useState('');
                   id='message' 
                   name='message' 
                   value={message} 
-                  onChange={(e) => setMessage(e.target.value)}>
+                  onChange={(e) => setMessage(e.target.value)}
+                  {...register('Message', { required: "Message is required"})}>
                 </textarea>
                 <small className='text-warning'>Message is required</small>
               </label>
@@ -93,6 +102,6 @@ const [message, setMessage ] = useState('');
             <button type="submit">Send</button>
         </form>
         </FormStyle>
-    </div>
+    </>
   )
 }
