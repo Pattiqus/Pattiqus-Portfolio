@@ -18,13 +18,19 @@ const FooterStyles = styled.div`
     list-style: none;
     bottom: 0;
     justify-content: center;
+    &:hover {
+        color: var(--steel-1);
+    }
 }
 .footerButtons {
     margin: 5px 20px 5px 20px;
     font-size: 4rem;
+
 }
-.trademark.span {
+.trademark {
+    display: flex;
     justify-content: center;
+    font-size: 1.5rem;
 }
 `;
 
@@ -62,9 +68,7 @@ export default function footerLayout(props) {
                     </li>
                 ))} 
             </ul>
-            <div className='trademark'>
-                <span>Written by Pattiqus © </span>
-            </div>
+            <span className='trademark'>Written by Pattiqus © </span>
         </div>
         </FooterStyles>
         {props.children}

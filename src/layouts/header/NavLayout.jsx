@@ -34,7 +34,10 @@ const NavBarStyle = styled.nav`
         outline: none;
     }
     .active {
-        color: var(--white);
+        color: var(--steel-1);
+        border: solid;
+        border-radius: 8px;
+        border-color: var(--steel-1);
     }
     .mobile-menu-icon {
         position: absolute;
@@ -109,7 +112,7 @@ export default function NavLayout() {
         },
         {
             title: 'Resume',
-            link: 'google.drive can lock in google drive after grade'
+            link: 'https://drive.google.com/file/d/1xcEo0DQjMCLL6iFEljisaLjj2UBkcy0H/view?usp=sharing'
         },
     ];
 
