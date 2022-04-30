@@ -52,8 +52,8 @@ export default function footerLayout(props) {
         <FooterStyles>
         <div className="footer__container">
             <ul className='footerLinksList'>
-            {socialLinks.map((item) => (
-                    <li className='footerButtons'>
+            {socialLinks.map((item, index) => (
+                    <li key={index} className='footerButtons'>
                         <a href={item.link} target='_blank' rel='noreferrer'>
                         {item.title}
                         </a>

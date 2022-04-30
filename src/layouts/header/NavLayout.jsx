@@ -140,7 +140,7 @@ export default function NavLayout() {
             {navItems.map((item) => (
                 <li key={item.link}>
                     <NavLink to={item.link}
-                    exact
+                    exact='true'
                     onClick={() => SetShowNav(!showNav)}
                     role='button'
                     onKeyDown={() => SetShowNav(!showNav)}
