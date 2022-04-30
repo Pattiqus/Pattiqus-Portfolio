@@ -8,22 +8,23 @@ const FooterStyles = styled.div`
     display: flex;
     flex-direction: column;
     bottom: 0;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    background: var(--dark-bg);
 }
 .footerLinksList {
     display: flex;
     list-style: none;
-    justify-content: center;
-    width: 100%;
-    position: fixed;
-    background: var(--dark-bg);
     bottom: 0;
+    justify-content: center;
 }
 .footerButtons {
     margin: 5px 20px 5px 20px;
     font-size: 4rem;
 }
-.trademark {
-    display: inline-block;
+.trademark.span {
+    justify-content: center;
 }
 `;
 
