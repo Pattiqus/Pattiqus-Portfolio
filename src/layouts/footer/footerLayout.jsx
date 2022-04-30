@@ -4,26 +4,26 @@ import { faGithub, faLinkedin, faStackOverflow, faTwitter } from '@fortawesome/f
 import styled from 'styled-components';
 
 const FooterStyles = styled.div`
-    .footerLinksList {
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+}
+.footerLinksList {
     display: flex;
     list-style: none;
     justify-content: center;
-    bottom: 0;
     width: 100%;
     position: fixed;
     background: var(--dark-bg);
+    bottom: 0;
 }
 .footerButtons {
     margin: 5px 20px 5px 20px;
     font-size: 4rem;
 }
-.footer__container {
-    display: flex;
-    flex-direction: column;
-
-}
 .trademark {
-    margin: 5px 20px 5px 20px;
+    display: inline-block;
 }
 `;
 

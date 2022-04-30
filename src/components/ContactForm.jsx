@@ -91,7 +91,7 @@ return (
                   {...register('email', { required: "Email is required"})} 
                   onChange={(e) => setEmail(e.target.value)}
                   />
-                {errors.name && (<small className='text-warning'>{errors.email.message}</small>)}
+                {errors.email && (<small className='text-warning'>{errors.email.message}</small>)}
               </label>
             </div>
             <div className="form-group">
@@ -105,7 +105,7 @@ return (
                   {...register('inquiry', { required: "Please enter your inquiry"})} 
                   onChange={(e) => setInquiry(e.target.value)}
                 />
-                {errors.name && (<small className='text-warning'>{errors.inquiry.message}</small>)}
+                {errors.inquiry && (<small className='text-warning'>{errors.inquiry.message}</small>)}
               </label>
             </div>
             <button type="submit">Send</button>
