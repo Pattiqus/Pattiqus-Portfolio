@@ -55,10 +55,11 @@ const [name, setName ] = useState('');
 const [email, setEmail ] = useState('');
 const [inquiry, setInquiry ] = useState('');
 
-const { register, handleSubmit, formState: { errors },} = useForm();
+const { register, handleSubmit, formState: { errors }, reset} = useForm();
 
 const onSubmit = (data) => {
   console.log(data);
+  reset();
 };
 
 console.log(errors);
@@ -66,6 +67,7 @@ console.log(errors);
 return (
     <div>
       <FormStyle onSubmit={handleSubmit(onSubmit)}>
+        
             <div className="form-group">
               <label htmlFor='name'>
                 Your name
