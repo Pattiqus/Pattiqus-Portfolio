@@ -20,9 +20,10 @@ const FooterStyles = styled.div`
 .footer__container {
     display: flex;
     flex-direction: column;
+
 }
 .trademark {
-    margin-bottom: 20px;
+    margin: 5px 20px 5px 20px;
 }
 `;
 

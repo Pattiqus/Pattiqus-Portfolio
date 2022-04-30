@@ -33,17 +33,19 @@ const FormStyle = styled.form`
     color: red;
   }
   button[type='submit'] {
-    background-color: var(--gray-1);
-    color: var(--black);
+    background-color: var(--black);
+    color: var(--steel-1);
+    border-color: var(--steel-1);
     font-size: 2rem;
     display: inline-block;
     outline: none;
-    border: none;
+    border: solid;
     padding: 1rem 4rem;
     border-radius: 8px;
     cursor: pointer;
     &:hover {
     background-color: var(--steel-1);
+    color: var(--black);
   }
   }
 `;
