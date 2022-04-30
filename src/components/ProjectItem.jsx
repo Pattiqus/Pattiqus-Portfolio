@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import placeholderImg from '../assets/images/placeholderImg.png'
+import { IoRocket } from 'react-icons/io5';
 
 const ProjectItemStyles = styled.div`
   .projectItem__img {
@@ -36,6 +37,11 @@ const ProjectItemStyles = styled.div`
     display: flex;
     justify-content: space-around;
   }
+  .icon {
+    display: block;
+    width: fit-content;
+    margin: auto;
+  }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
       height: 350px;
@@ -52,6 +58,11 @@ export default function ProjectItem({
 }) {
   return (
     <ProjectItemStyles>
+
+      {/* <IoRocket style={{
+        width: '50px',
+      }}/> */}
+
       <Link to="#" className="projectItem__img">
         <img src={img} alt="project img" />
       </Link>
