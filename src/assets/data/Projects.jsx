@@ -1,6 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
 import placeholderImg from '../images/placeholderImg.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { IoRocket } from 'react-icons/io5';
 import IconLink from '../../components/IconLink';
@@ -34,20 +33,26 @@ const projects = [
   {
     id: uuidv4(),
     name: "Traveler's Weather Dashboard",
-    desc:
-      'An application to get the weather from current location, or anywhere in the world, at anytime',
+    desc:'An application to get the weather from current location, or anywhere in the world, at anytime',
     img: placeholderImg,
-    hyperGit: <a href='https://github.com/Pattiqus/6Week-6-Weather-Dashboard'>
-    <FontAwesomeIcon icon={faGithub}/></a>,
-    hyperDeployed: <a href='https://my-recipe-pbmm.herokuapp.com/'>
-    <div className='icon'>{<IoRocket width={'50'}/>}</div></a>
+    hyperGit: <IconLink href="https://github.com/Pattiqus/6Week-6-Weather-Dashboard" icon={faGithub} fontAwesome />,
+    hyperDeployed: <IconLink href="https://pattiqus.github.io/6Week-6-Weather-Dashboard/" icon={IoRocket} />
   },
   {
     id: uuidv4(),
-    name: 'Lorem',
-    desc:
-      'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    name: 'Work Day Scheduler',
+    desc:'This repository contains the source code for a work day scheduler, perfect for organizing your day',
     img: placeholderImg,
+    hyperGit: <IconLink href="https://github.com/Pattiqus/Week5-homework-work-day-scheduler" icon={faGithub} fontAwesome />,
+    hyperDeployed: <IconLink href="https://pattiqus.github.io/Week5-homework-work-day-scheduler/" icon={IoRocket} />
+  },
+  {
+    id: uuidv4(),
+    name: 'Movie Hunter (Licence Expired)',
+    desc:'This application can save you time and inform you of the hottest flicks at a location near you or abroad!',
+    img: placeholderImg,
+    hyperGit: <IconLink href="https://github.com/Pattiqus/Movie-Hunter" icon={faGithub} fontAwesome />,
+    hyperDeployed: <IconLink href="https://hmughal71.github.io/Movie-Hunter/" icon={IoRocket} />
   },
 ];
 

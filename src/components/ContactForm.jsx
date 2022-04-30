@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
+import { useForm } from 'react-hook-form';
+
+
 
 const FormStyle = styled.form`
   width: 100%;
@@ -58,6 +61,7 @@ const [message, setMessage ] = useState('');
                   value={name} 
                   onChange={(e) => setName(e.target.value)}>
                 </input>
+                <small className='text-warning'>Name is required</small>
               </label>
             </div>
             <div className="form-group">
@@ -70,6 +74,7 @@ const [message, setMessage ] = useState('');
                   value={email} 
                   onChange={(e) => setEmail(e.target.value)}>
                 </input>
+                <small className='text-warning'>Email is required</small>
               </label>
             </div>
             <div className="form-group">
@@ -82,6 +87,7 @@ const [message, setMessage ] = useState('');
                   value={message} 
                   onChange={(e) => setMessage(e.target.value)}>
                 </textarea>
+                <small className='text-warning'>Message is required</small>
               </label>
             </div>
             <button type="submit">Send</button>
