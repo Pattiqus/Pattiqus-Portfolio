@@ -61,7 +61,7 @@ export default function footerLayout(props) {
                 ))} 
             </ul>
             <div className='trademark'>
-                <p>Pattiqus</p>
+                <span>Written by Pattiqus © </span>
             </div>
         </div>
         </FooterStyles>

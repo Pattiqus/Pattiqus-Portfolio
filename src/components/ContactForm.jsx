@@ -29,6 +29,9 @@ const FormStyle = styled.form`
     min-height: 250px;
     resize: vertical;
   }
+  .text-warning {
+    color: red;
+  }
   button[type='submit'] {
     background-color: var(--gray-1);
     color: var(--black);
@@ -39,13 +42,16 @@ const FormStyle = styled.form`
     padding: 1rem 4rem;
     border-radius: 8px;
     cursor: pointer;
+    &:hover {
+    background-color: var(--steel-1);
+  }
   }
 `;
 
 export default function ContactForm() {
 const [name, setName ] = useState('');
 const [email, setEmail ] = useState('');
-const [message, setMessage ] = useState('');
+const [inquiry, setInquiry ] = useState('');
 
 const { register, handleSubmit, formState: { errors },} = useForm();
 
@@ -53,10 +59,11 @@ const onSubmit = (data) => {
   console.log(data);
 };
 
+console.log(errors);
+
 return (
-    <>
-      <FormStyle>
-        <form onSubmit={handleSubmit(onSubmit)}>
+    <div>
+      <FormStyle onSubmit={handleSubmit(onSubmit)}>
             <div className="form-group">
               <label htmlFor='name'>
                 Your name
@@ -64,44 +71,43 @@ return (
                   type='text' 
                   id='name' 
                   name='name' 
-                  value={name} 
+                  value={name}
+                  {...register('name', { required: "Name is required"})} 
                   onChange={(e) => setName(e.target.value)}
-                  {...register('name', { required: "Name is required"})}
                   />
-                <small className='text-warning'>Name is required</small>
+                {errors.name && (<small className='text-warning'>{errors.name.message}</small>)}  
               </label>
             </div>
             <div className="form-group">
               <label htmlFor='email'>
                 Your email address
                 <input 
-                  type='text' 
+                  type='text'
                   id='email' 
                   name='email' 
                   value={email} 
+                  {...register('email', { required: "Email is required"})} 
                   onChange={(e) => setEmail(e.target.value)}
-                  {...register('email', { required: "Email is required"})}
                   />
-                <small className='text-warning'>Email is required</small>
+                {errors.name && (<small className='text-warning'>{errors.email.message}</small>)}
               </label>
             </div>
             <div className="form-group">
-              <label htmlFor='message'>
-                Your message
+              <label htmlFor='inquiry'>
+                Your inquiry
                 <textarea 
-                  type='text' 
-                  id='message' 
-                  name='message' 
-                  value={message} 
-                  onChange={(e) => setMessage(e.target.value)}
-                  {...register('Message', { required: "Message is required"})}>
-                </textarea>
-                <small className='text-warning'>Message is required</small>
+                  type='text'
+                  id='inquiry' 
+                  name='inquiry' 
+                  value={inquiry} 
+                  {...register('inquiry', { required: "Please enter your inquiry"})} 
+                  onChange={(e) => setInquiry(e.target.value)}
+                />
+                {errors.name && (<small className='text-warning'>{errors.inquiry.message}</small>)}
               </label>
             </div>
             <button type="submit">Send</button>
-        </form>
         </FormStyle>
-    </>
+    </div>
   )
 }
