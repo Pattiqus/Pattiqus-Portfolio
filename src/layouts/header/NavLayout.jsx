@@ -96,23 +96,23 @@ export default function NavLayout() {
     const navItems = [
         {
             title: 'Home',
-            link: '/'
+            link: '/',
         },
         {
             title: 'About',
-            link: '/about'
+            link: '/about',
         },
         {
             title: 'Portfolio',
-            link: '/portfolio'
+            link: '/portfolio',
         },
         {
             title: 'Contact',
-            link: '/contact'
+            link: '/contact',
         },
         {
             title: 'Resume',
-            link: 'https://drive.google.com/file/d/1xcEo0DQjMCLL6iFEljisaLjj2UBkcy0H/view?usp=sharing'
+            link: '//drive.google.com/file/d/1xcEo0DQjMCLL6iFEljisaLjj2UBkcy0H/view?usp=sharing',
         },
     ];
 

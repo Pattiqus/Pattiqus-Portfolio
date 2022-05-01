@@ -51,5 +51,5 @@ If you have any qestions regrading the repository or the project please contact:
 </ul>
 
 # Links
-- [GitHub Repository](https://github.com/Pattiqus/mongoDB-Social-Networking-API)
+- [GitHub Repository](https://github.com/Pattiqus/pattiqus-portfolio)
 - [Deployed (HEROKU)](https://guarded-island-69149.herokuapp.com/)
