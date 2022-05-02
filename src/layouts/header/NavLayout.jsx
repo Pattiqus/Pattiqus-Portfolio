@@ -96,7 +96,7 @@ export default function NavLayout() {
     const navItems = [
         {
             title: 'Home',
-            link: '/',
+            link: '/pattiqus-portfolio',
         },
         {
             title: 'About',
