@@ -53,4 +53,4 @@ If you have any qestions regrading the repository or the project please contact:
 
 # Links
 - [GitHub Repository](https://github.com/Pattiqus/pattiqus-portfolio)
-- [Deployed (GitHub Pages](https://pattiqus.github.io/pattiqus-portfolio)
+- [Deployed (GitHub Pages)](https://pattiqus.github.io/pattiqus-portfolio)
