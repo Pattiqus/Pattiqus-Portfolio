@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import FooterLayout from './layouts/footer/FooterLayout'
+import FooterLayout from './layouts/footer/footerLayout'
 import NavLayout from './layouts/header/NavLayout'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -13,7 +13,7 @@ function App() {
         <Router>
             <NavLayout/>
               <Routes>
-                  <Route path="/pattiqus-portfolio" element={<Home/>}>
+                  <Route path="/" element={<Home/>}>
                   </Route>
                   <Route path="/about" element={<About/>}>
                   </Route>
