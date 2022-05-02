@@ -53,4 +53,4 @@ If you have any qestions regrading the repository or the project please contact:
 
 # Links
 - [GitHub Repository](https://github.com/Pattiqus/pattiqus-portfolio)
-- [Deployed (HEROKU)](https://guarded-island-69149.herokuapp.com/)
+- [Deployed (GitHub Pages](https://pattiqus.github.io/pattiqus-portfolio)
