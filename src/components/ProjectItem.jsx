@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import placeholderImg from '../assets/images/placeholderImg.png'
-import { IoRocket } from 'react-icons/io5';
 
 const ProjectItemStyles = styled.div`
   .projectItem__img {
@@ -13,7 +12,8 @@ const ProjectItemStyles = styled.div`
     display: inline-block;
     border: 3px solid var(--gray-2);
     img {
-      height: 100%;
+      height: 100%
+      width 100%;
     }
   }
   .projectItem__info {
