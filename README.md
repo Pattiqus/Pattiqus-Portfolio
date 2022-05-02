@@ -14,6 +14,8 @@ This sleek and beutiful design combines functionality and simplicity to deliver 
 
 The application was written using JavaScript and includes the following technologies: 
 - [React.js](https://nodejs.org/en/) 
+- [React Router](https://reactrouter.com/) 
+- [styled-components](https://styled-components.com/) 
 # Table of Contents
 * [Installation](#installation)
 * [Screenshots](#screenshots)
@@ -27,8 +29,7 @@ The deployed version of this site can simply be run from your web browser.
 # Screenshots
 <p>Demonstration</p>
 
-![J.A.T.E](./assets/screenshots/JATE-function.gif)
-
+![Portfolio](./src/assets/images/portfolioReact.gif)
 
 
 # License
