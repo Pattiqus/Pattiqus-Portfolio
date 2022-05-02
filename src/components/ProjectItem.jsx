@@ -13,7 +13,6 @@ const ProjectItemStyles = styled.div`
     border: 3px solid var(--gray-2);
     img {
       height: 100%
-      width 100%;
     }
   }
   .projectItem__info {
